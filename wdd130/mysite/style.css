@@ -1,0 +1,161 @@
+/* --- 1. GLOBAL & LAYOUT --- */
+body {
+    background-color: #4a5568;
+}
+
+#max-width {
+}
+
+#main-background {
+    background-color: #f8fafc;
+    max-width: 1200px;
+    border-radius: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main {
+    padding: 60px;
+}
+
+#card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+#card-grid-single {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #f8fafc;
+}
+
+/* --- 2. HEADER & NAVIGATION --- */
+header {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(2, 36, 100, 0.8), rgba(1, 24, 67, 0.8));
+    justify-content: center; 
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+    top: 20px;
+    width: 90%;
+    border-radius: 75px;
+    backdrop-filter: blur(15px);
+    max-width: 1400px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    max-width: 5%;
+    border-radius: 20px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    padding: 30px;
+    gap: 15px;
+    z-index: 10;
+}
+
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: #f0e68c;
+}
+.client-report {
+    padding-right: 40px;
+}
+
+/* --- 3. TYPOGRAPHY --- */
+h1 {
+    font-family: 'inter', sans-serif; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    color: #110472;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'inter', sans-serif; 
+    font-weight: 500; 
+    letter-spacing: 1px;
+    color: #110472;
+    text-align: center;
+}
+
+p {
+    font-family: 'inter', sans-serif; 
+    font-weight: 400; 
+    text-transform: none; 
+    letter-spacing: 0px;
+    color: #333333;
+    text-align: center;
+}
+
+/* --- 4. MEDIA & INTERACTIVE --- */
+#Hero {
+}
+
+#Hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-img, .ice-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.ice-img {
+    border: 3px solid #110472;
+}
+
+.card-single-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.ice-img:hover {
+    transform: scale(1.45);
+    box-shadow: #333333;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.05);
+    box-shadow: #333333;
+    transition: 0.5s;
+}
+
+.card-single-img:hover {
+    transform: scale(1.05);
+    box-shadow: #333333;
+    transition: 0.5s;
+}

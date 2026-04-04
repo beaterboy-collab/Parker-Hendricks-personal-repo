@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Apostles Spotlights</title>
+
+
+
+
+
+    <style>
+            body {
+                background-color: #e8eced;
+            }
+            .apostle-grid {
+                padding: 20px;
+                border-radius: 50px;
+                border: 10px solid black;
+                background-image: url('images/christus.webp');
+                background-size: cover;
+                background-position: center;
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+
+
+            /* Text Styles */
+                     
+            h1 {
+                grid-column: span 3;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                font-size: 75px;
+                font-family: arial;
+            }
+            h3 {
+                grid-column: span 3;
+                text-align: center;
+                color: white;
+                text-shadow: 2px 2px 4px #000000;
+                font-size: 50px;
+                font-family: arial;
+            }
+            
+            /* Picture Grids */
+            .first-presidency {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                gap: 10px;
+                margin: 0 auto;
+            }
+            .twelve-apostles {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                margin-top: 20px;
+                margin: 0 auto;
+                padding: 0 100px 20px 100px;
+            }
+            
+            /* Pictures Styles */
+            .president {
+                border-radius: 50%;
+                border: 10px solid white;
+                object-fit: cover;
+                height: 250px;
+                width: 250px;
+            }
+            .councelors {
+                border-radius: 50%;
+                border: 10px solid white;
+                object-fit: cover;
+                height: 200px;
+                width: 200px;
+            }   
+            .apostle {
+                border-radius: 50%;
+                border: 10px solid white;
+                object-fit: cover;
+                height: 150px;
+                width: 150px;
+            }
+            img:hover {
+                opacity: 0.9;
+                transform: scale(1.2);
+                box-shadow: 0 0 10px #333333;
+                transition: transform 0.5s ease;
+                box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+                border-color: #ffd700;
+            }
+    </style>
+
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+    <div class="apostle-grid">
+
+        <h1>First Presidency</h1>
+
+
+
+        <div class="first-presidency">
+            <img src="images/eyring.webp" alt="President Eyring" class="councelors">
+            <img src="images/oaks.webp" alt="President Oaks" class="president">
+            <img src="images/christofferson.webp" alt="President Christofferson" class="councelors">
+        </div>
+
+        <h3>Quorum of the Twelve Apostles</h3>
+
+        <div class="twelve-apostles">
+            <img src="images/holland.webp" alt="Elder Holland" class="apostle">
+            <img src="images/uchtdorf.webp" alt="Elder Uchtdorf" class="apostle">
+            <img src="images/bednar.webp" alt="Elder Bednar" class="apostle">
+            <img src="images/cook.webp" alt="Elder Cook" class="apostle">
+            <img src="images/anderson.webp" alt="Elder Anderson" class="apostle">
+            <img src="images/rasband.webp" alt="Elder Rasband" class="apostle">
+            <img src="images/stevenson.webp" alt="Elder Stevenson" class="apostle">
+            <img src="images/renlund.webp" alt="Elder Renlund" class="apostle">
+            <img src="images/gong.webp" alt="Elder Gong" class="apostle">
+            <img src="images/soares.webp" alt="Elder Soares" class="apostle">
+            <img src="images/kearon.webp" alt="Elder Kearon" class="apostle">
+            <img src="images/causse.webp" alt="Elder Caussé" class="apostle">
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
